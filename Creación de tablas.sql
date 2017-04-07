@@ -1,11 +1,3 @@
---IMPORTANTE BORRAR ESTAS TABLAS DE SUS BASES, O RESTAURAR LA NUEVA QUE DEJE AQUIMISMO EN GITHUB
-drop table Relacion
-drop table Servidores
-drop table Software
-
-
----Nueva base
-
 Create database ProyectoFinal
 
 create table Usuarios (
@@ -16,8 +8,9 @@ Nombre varchar(50) not null,
 Rol int
 );
 
-create table Laboratorios (
+create table Laboratorios(
 Id_Lab int identity primary key,
+Numero_lab int,
 Computadoras int not null,
 Configuracion varchar(150),
 SoftwareInstalado varchar(150),
